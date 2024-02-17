@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useLayoutEffect } from 'react';
 import logo from './logo.svg';
 import Start from './pages/Start/Start';
 import './App.scss';
@@ -29,9 +29,13 @@ const Game = () => {
 	return <GamePage />;
 };
 
-
 function App() {
 	const { step } = useContext(StepContext) as IStep;
+
+	useLayoutEffect(() => {
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+	}, []);
 
 	switch (step) {
 		case 1:
