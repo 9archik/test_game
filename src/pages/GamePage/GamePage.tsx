@@ -187,13 +187,7 @@ const GamePage = () => {
 				/>
 			))}
 
-			{/* <AlienInGame
-				onExitFromCard={onExitFromCard}
-				index={1}
-				onClick={alienOnClick}
-				isOur={true}
-				top={30}
-			/> */}
+
 		</>
 	);
 };
