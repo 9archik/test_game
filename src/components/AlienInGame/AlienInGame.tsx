@@ -43,11 +43,6 @@ const AlienInGame: React.FC<IAlienInGame> = ({ isOur, top, onClick, onExitFromCa
 	const [imageBubble, setImageBubble] = useState<boolean>(false);
 	const [phrase, setPhrase] = useState<string>('');
 
-	// useEffect(() => {
-	// 	let timer = setInterval(() => {}, 10);
-
-	// 	return () => clearInterval(timer);
-	// });
 
 	useInterval(() => {
 		if (ref.current) {

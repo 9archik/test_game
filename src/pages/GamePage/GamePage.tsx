@@ -57,7 +57,6 @@ const differenceTwoDates = (date1: Date, date2: Date): number => {
 	return differenceInSeconds;
 };
 
-
 const GamePage = () => {
 	const { setStep, step, alienCount, setAlienCount } = useContext(StepContext) as IStep;
 	const [residentsList, setResidentsList] = useState<IResidents[]>([]);
@@ -113,7 +112,6 @@ const GamePage = () => {
 	}, []);
 
 	useInterval(() => {
-		
 		if (Math.random() > 0.6 && alienList.length < 3 && aliensGreenRef.current < 10) {
 			const alien: Omit<IAlienInGameWithKey, 'index'> = {
 				isOur: Math.random() < 0.2,
@@ -143,9 +141,6 @@ const GamePage = () => {
 		}
 		setAlienCount((prev) => prev + 1);
 	}, []);
-
-	
-
 
 	return (
 		<>
@@ -186,8 +181,6 @@ const GamePage = () => {
 					key={el.key}
 				/>
 			))}
-
-
 		</>
 	);
 };
