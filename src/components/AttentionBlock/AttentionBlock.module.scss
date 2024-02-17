@@ -1,0 +1,76 @@
+.container {
+    padding: 46px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.content {
+    flex: 1 0 auto;
+    padding: 30px 28px 40px 28px;
+    background: url("../../assets/images/wood.png");
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+
+    .hand {
+        margin: -50px 0 0 0;
+        position: relative;
+        width: 131px;
+
+        .handImg {
+            width: 131px;
+        }
+    }
+
+    .linesClick {
+        position: absolute;
+        top: 0;
+        left: 14px;
+        opacity: 0; /* Начальное значение для плавного появления */
+        animation: fadeInAnimation 3.5s infinite linear 0.5s; /* Длительность 1 секунда, бесконечное повторение, задержка 1 секунда */
+    }
+}
+
+.alienCont {
+    margin: 30px 0 0 0;
+}
+
+.text {
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    margin: 52px 0 0 0;
+    flex: 1 0 auto;
+    line-height: 20px;
+}
+
+.button {
+    margin: 30px 0 0 0;
+}

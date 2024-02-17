@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+}
+
+.residents {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+}
+
+.endScreen {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding: 0 20px;
+    z-index: 3;
+    .text {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .big {
+            font-size: 48px;
+
+            @media (max-width:340px) {
+                font-size: 40px;
+            }
+        }
+
+        .small {
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+
+            span {
+                width: min-content;
+            }
+        }
+    }
+}

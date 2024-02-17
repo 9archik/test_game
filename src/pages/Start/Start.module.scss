@@ -1,0 +1,52 @@
+.container {
+    padding: 56px 20px;
+}
+
+.text {
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    color: #ffbf1a;
+    margin: 52px 0 0 0;
+    flex: 1 0 auto;
+    line-height: 40px;
+
+    @media (max-width: 374px) {
+        font-size: 28px;
+    }
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.alienAnim {
+    animation: moveLeftRight 2s linear infinite;
+}
+
+.alienCont {
+    filter: brightness(1.15);
+}
+
+.bubbleBright {
+    filter: brightness(0.5);
+}
+
+.btn {
+    margin: 30px 0 0 0;
+}

@@ -1,0 +1,31 @@
+.container {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+
+    .block {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 4px solid black;
+        background-color: #c7d5f2f2;
+        padding: 0 5px;
+        min-height: 47px;
+        gap: 10px;
+
+        @media (max-width: 340px) {
+            font-size: 12px;
+        }
+
+        &.warning {
+            border: 4px solid #f14338;
+            color: #f14338;
+        }
+    }
+}

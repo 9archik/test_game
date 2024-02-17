@@ -1,0 +1,58 @@
+.container {
+    padding: 46px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.content {
+    flex: 1 0 auto;
+    padding: 30px 28px 40px 28px;
+    background: url("../../assets/images/wood.png");
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    margin: 52px 0 0 0;
+    flex: 1 0 auto;
+    line-height: 20px;
+}
+
+.button {
+    margin: 30px 0 0 0;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.bubbleSVG {
+    opacity: 0;
+    animation: fadeInAnimation 3.5s infinite linear 0.5s; /* Длительность 1 секунда, бесконечное повторение, задержка 1 секунда */
+}

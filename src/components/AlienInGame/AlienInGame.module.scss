@@ -1,0 +1,14 @@
+.container {
+    position: fixed !important;
+    z-index: 2;
+    left: -20px;
+
+    &.back{
+        z-index: -1;
+    }
+}
+
+// .alien {
+//     max-width: 150px;
+//     max-height: 150px;
+// }
